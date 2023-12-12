@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+	<mapper namespace="lounge">
+	<insert id="create" parameterType="loungeVO">
+		insert into community_lounge values (
+			#{lounge_id},
+			#{lounge_type},
+			#{lounge_pet_type},
+			#{lounge_user_id},
+			#{lounge_title},
+			#{lounge_content},
+			#{lounge_writer},
+			#{lounge_hashtag},
+			CURRENT_TIMESTAMP,
+			)
+	</insert>
+
+</mapper>
