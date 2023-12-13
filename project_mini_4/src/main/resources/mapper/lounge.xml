@@ -4,7 +4,7 @@
 	<mapper namespace="lounge">
 	<insert id="create" parameterType="loungeVO">
 		insert into community_lounge values (
-			#{lounge_id},
+			null,
 			#{lounge_type},
 			#{lounge_pet_type},
 			#{lounge_user_id},
@@ -12,8 +12,23 @@
 			#{lounge_content},
 			#{lounge_writer},
 			#{lounge_hashtag},
-			CURRENT_TIMESTAMP,
+			CURRENT_TIMESTAMP
 			)
 	</insert>
+	
+	<update id="update" parameterType="loungeVO">
+		update community_lounge set 
+		lounge_title = #{lounge_title},
+		lounge_content = #{lounge_content}
+		where lounge_id = #{lounge_id}
+	</update>
+	
+	<select id="one" parameterType="Integer" resultType="loungeVO">
+		select * from community_lounge where lounge_id = #{lounge_id}
+	</select>
+	
+	<select id="list" resultType="loungeVO">
+		select * from community_lounge order by lounge_id desc
+	</select>
 
 </mapper>

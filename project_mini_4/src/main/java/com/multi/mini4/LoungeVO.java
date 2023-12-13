@@ -3,7 +3,7 @@ package com.multi.mini4;
 import java.sql.Timestamp;
 
 public class LoungeVO {
-	private int lounge_Id;
+	private int lounge_id;
     private char lounge_type;
     private String lounge_pet_type;
     private int lounge_user_id;
@@ -13,11 +13,11 @@ public class LoungeVO {
     private String lounge_hashtag;
     private Timestamp lounge_create_date;
     
-	public int getLounge_Id() {
-		return lounge_Id;
+	public int getLounge_id() {
+		return lounge_id;
 	}
-	public void setLounge_Id(int lounge_Id) {
-		this.lounge_Id = lounge_Id;
+	public void setLounge_id(int lounge_id) {
+		this.lounge_id = lounge_id;
 	}
 	public char getLounge_type() {
 		return lounge_type;
@@ -70,7 +70,7 @@ public class LoungeVO {
 
 	@Override
 	public String toString() {
-		return "LoungeVO [lounge_Id=" + lounge_Id + ", lounge_type=" + lounge_type + ", lounge_pet_type="
+		return "LoungeVO [lounge_id=" + lounge_id + ", lounge_type=" + lounge_type + ", lounge_pet_type="
 				+ lounge_pet_type + ", lounge_user_id=" + lounge_user_id + ", lounge_title=" + lounge_title
 				+ ", lounge_content=" + lounge_content + ", lounge_writer=" + lounge_writer + ", lounge_hashtag="
 				+ lounge_hashtag + ", lounge_create_date=" + lounge_create_date + "]";

@@ -10,4 +10,16 @@ public class LoungeService {
 	public void insert(LoungeVO loungeVO) {
 		loungeDAO.insert(loungeVO);
 	}
+	
+	public void update(LoungeVO loungeVO) {
+		loungeDAO.update(loungeVO);
+	}
+	
+	public void list() {
+		loungeDAO.list();
+	}
+	
+	public void one(Integer lounge_id) {
+		loungeDAO.one(lounge_id);
+	}
 }
