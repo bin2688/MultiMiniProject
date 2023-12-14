@@ -21,7 +21,7 @@ public class LoungeController {
 	
 	@RequestMapping("update.lounge")
 	public void update(LoungeVO loungeVO) {
-		loungeDAO.update(loungeVO);	
+	loungeDAO.update(loungeVO);
 	}
 	
 	@RequestMapping("list.lounge")
