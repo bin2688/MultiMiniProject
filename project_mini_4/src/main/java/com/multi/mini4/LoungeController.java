@@ -24,6 +24,11 @@ public class LoungeController {
 	loungeDAO.update(loungeVO);
 	}
 	
+	@RequestMapping("delete.lounge")
+	public void delete(LoungeVO loungeVO) {
+	loungeDAO.delete(loungeVO);
+	}
+	
 	@RequestMapping("list.lounge")
 	public void list(Model model) throws Exception {
 		List<LoungeVO> list = loungeDAO.list();
@@ -34,6 +39,6 @@ public class LoungeController {
 	public void one(Integer lounge_id, Model model) throws Exception {		
 		LoungeVO loungeVO = loungeDAO.one(lounge_id);		
 		model.addAttribute("one", loungeVO);
-		
+	
 	}
 }

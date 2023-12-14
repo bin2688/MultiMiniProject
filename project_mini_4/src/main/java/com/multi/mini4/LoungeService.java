@@ -15,6 +15,10 @@ public class LoungeService {
 		loungeDAO.update(loungeVO);
 	}
 	
+	public void delete(LoungeVO loungeVO) {
+		loungeDAO.delete(loungeVO);
+	}
+	
 	public void list() {
 		loungeDAO.list();
 	}
@@ -22,4 +26,5 @@ public class LoungeService {
 	public void one(Integer lounge_id) {
 		loungeDAO.one(lounge_id);
 	}
+	
 }

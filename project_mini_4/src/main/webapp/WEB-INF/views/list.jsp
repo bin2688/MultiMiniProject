@@ -39,7 +39,7 @@
         </tbody>
     </table>
 <a href="community.jsp">첫페이지로</a>
-<a href="community.jsp">글쓰기</a>
+<a href="lounge_insert.jsp">글쓰기</a>
 </div>
 </body>
 </html>

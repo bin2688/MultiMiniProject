@@ -18,7 +18,11 @@ public class LoungeDAO {
 	}
 	
 	public void update(LoungeVO loungeVO) {
-		my.insert("lounge.update", loungeVO);
+		my.update("lounge.update", loungeVO);
+	}
+	
+	public void delete(LoungeVO loungeVO) {
+		my.delete("lounge.delete", loungeVO);
 	}
 	
 	public List<LoungeVO> list() {
@@ -29,5 +33,6 @@ public class LoungeDAO {
 	public LoungeVO one(Integer lounge_id) {
 		return my.selectOne("lounge.one", lounge_id);
 	}
+
 	
 }
