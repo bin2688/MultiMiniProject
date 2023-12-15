@@ -8,48 +8,15 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
 $(function() {
-    $.ajax({
-        url: "list.lounge",
-        data: {
-        	lounge_type: ''
-        },
-        success: function(result) {
-            $('#result').html(result);
-        }
-    })
     $('#b1').click(function() {
 		$.ajax({
 			url: "list.lounge",
-			data: {
-				lounge_type: ''
-			},
 			success: function(result) {
 				$('#result').html(result);
 			}//success
 		})//ajax
 	})//b1	
-	$('#b2').click(function() {
-		$.ajax({
-			url: "list.lounge",
-			data: {
-				lounge_type = 'R'
-			},
-			success: function(result) {
-				$('#result').html(result);
-			}//success
-		})//ajax
-	})//b2	
-	$('#b3').click(function() {
-		$.ajax({
-			url: "list.lounge",
-			data: {
-				lounge_type = 'Q'
-			},
-			success: function(result) {
-				$('#result').html(result);
-			}//success
-		})//ajax
-	})//b3	
+
 })//$
 </script>
 </head>

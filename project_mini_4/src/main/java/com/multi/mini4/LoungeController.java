@@ -21,12 +21,12 @@ public class LoungeController {
 	
 	@RequestMapping("update.lounge")
 	public void update(LoungeVO loungeVO) {
-	loungeDAO.update(loungeVO);
+		loungeDAO.update(loungeVO);
 	}
 	
 	@RequestMapping("delete.lounge")
 	public void delete(LoungeVO loungeVO) {
-	loungeDAO.delete(loungeVO);
+		loungeDAO.delete(loungeVO);
 	}
 	
 	@RequestMapping("list.lounge")
